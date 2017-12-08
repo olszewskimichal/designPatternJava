@@ -1,4 +1,4 @@
-# designPatternJava
+# Design pattern in Java
 Wzorce projektowe w Javie
 
 Przykłady wzorców projektowych zaimplementowanych w Javie. Każdy wzorzec znajduję się w swoim osobnym pakiecie. 
