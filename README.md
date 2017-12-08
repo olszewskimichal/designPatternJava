@@ -6,12 +6,9 @@ Nad główną klasą dotycząca danego wzorca, znajdują się informacje o tym c
 Dla każdego wzorca są testy napisane z wykorzystaniem JUNIT'a 5.
 
 Aktualnie opracowane wzorce:
-behavioral:
-
   - command pattern (wzorzec polecenia)
   - nullObject pattern
   - visitor pattern (wzorzec wizytator)
-design:
 
   - chainResponsibility (wzorzec łancucha odpowiedzialności)
   - composite pattern (wzorzec composite)
