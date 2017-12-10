@@ -1,4 +1,4 @@
-package pl.michal.olszewski.standard.design.composite;
+package pl.michal.olszewski.standard.structural.composite;
 
 import java.math.BigDecimal;
 

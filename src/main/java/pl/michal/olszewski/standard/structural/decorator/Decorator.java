@@ -1,4 +1,4 @@
-package pl.michal.olszewski.standard.design.decorator;
+package pl.michal.olszewski.standard.structural.decorator;
 
 abstract class Decorator extends Product {
 

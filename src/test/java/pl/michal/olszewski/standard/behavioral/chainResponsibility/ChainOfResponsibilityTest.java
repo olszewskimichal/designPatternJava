@@ -1,4 +1,4 @@
-package pl.michal.olszewski.standard.design.chainResponsibility;
+package pl.michal.olszewski.standard.behavioral.chainResponsibility;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertThrows;

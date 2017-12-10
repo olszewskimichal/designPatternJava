@@ -1,4 +1,4 @@
-package pl.michal.olszewski.standard.design.chainResponsibility;
+package pl.michal.olszewski.standard.behavioral.chainResponsibility;
 
 import java.math.BigDecimal;
 
