@@ -15,7 +15,7 @@ class NullObjectTest {
   }
 
   @Test
-  void shouldReturnNullObjectWhenEmployeeNotExists(){
+  void shouldReturnNullObjectWhenEmployeeNotExists() {
     EmployeeFactory employeeFactory = new EmployeeFactory();
     AbstractEmployee employee = employeeFactory.getEmployee("Robin");
     assertThat(employee.isNull()).isTrue();

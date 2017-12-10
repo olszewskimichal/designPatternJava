@@ -10,8 +10,12 @@ import java.math.BigDecimal;
  * -- declares an interface for accessing and managing its child components.
  */
 public interface Employee {
+
   String getName();
+
   BigDecimal getSalary();
+
   void print();
+
   void addEmployee(Employee e);
 }

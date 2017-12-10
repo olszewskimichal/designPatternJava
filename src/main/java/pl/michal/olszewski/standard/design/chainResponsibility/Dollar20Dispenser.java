@@ -14,12 +14,12 @@ public class Dollar20Dispenser implements DispenseChain {
   }
 
   @Override
-  public void setNext(DispenseChain next) {
-    this.chain = next;
+  public DispenseChain getNext() {
+    return chain;
   }
 
   @Override
-  public DispenseChain getNext() {
-    return chain;
+  public void setNext(DispenseChain next) {
+    this.chain = next;
   }
 }

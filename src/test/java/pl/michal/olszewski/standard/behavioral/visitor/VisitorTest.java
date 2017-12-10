@@ -17,12 +17,12 @@ class VisitorTest {
   @Nested
   class BigDecimalVisitorTest {
 
+    private Visitor visitor = null;
+
     @BeforeEach
     void setUp() {
       visitor = new BigDecimalVisitor();
     }
-
-    private Visitor visitor = null;
 
     @Test
     void fooTest() {
@@ -52,12 +52,12 @@ class VisitorTest {
   @Nested
   class StringVisitorTest {
 
+    private Visitor visitor = null;
+
     @BeforeEach
     void setUp() {
       visitor = new StringVisitor();
     }
-
-    private Visitor visitor = null;
 
     @Test
     void fooTest() {

@@ -3,7 +3,7 @@ package pl.michal.olszewski.standard.behavioral.nullObject;
 public class Programmer extends AbstractEmployee {
 
   public Programmer(String name) {
-    this.name=name;
+    this.name = name;
   }
 
   @Override

@@ -1,7 +1,6 @@
 package pl.michal.olszewski.standard.behavioral.visitor;
 
 /**
- *
  * Zadaniem wzorca projektowego Visitor jest oddzielenie algorytmu od struktury obiektów, na
  * których operuje. W opisywanym wzorcu projektowym wprowadzony zostaje nowy obiekt Visitor,
  * którego zadaniem jest odwiedzenie każdego z obiektów pewnego zespołu i wykonanie na każdym z

@@ -15,15 +15,14 @@ import java.math.BigDecimal;
  *
  * Wady:
  * - brak gwarancji obsługi żądania: kolejne ogniwa mogą zrezygnować z zajęcia się nim
- *
  */
 public interface DispenseChain {
 
   BigDecimal getDispenseValue();
 
-  void setNext(DispenseChain next);
-
   DispenseChain getNext();
+
+  void setNext(DispenseChain next);
 
   default Integer dispense(BigDecimal currency) {
     if (currency.compareTo(getDispenseValue()) >= 0) {

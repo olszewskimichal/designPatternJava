@@ -18,6 +18,7 @@ import org.mockito.Mock;
 import pl.michal.olszewski.extensions.MockitoExtension;
 
 public class TypeOfTest {
+
   @Nested
   class IsThenReturnTest {
 
