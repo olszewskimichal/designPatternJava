@@ -1,4 +1,4 @@
-package pl.michal.olszewski.standard.design.singleton;
+package pl.michal.olszewski.standard.creational.singleton;
 
 import static org.junit.jupiter.api.Assertions.assertSame;
 
