@@ -4,6 +4,8 @@ import static java.math.BigDecimal.ONE;
 import static java.math.BigDecimal.TEN;
 import static java.math.BigDecimal.ZERO;
 import static org.assertj.core.api.Assertions.assertThat;
+import static pl.michal.olszewski.funcional.behavioral.visitor.VisitorLambda.bigDecimalVisitor;
+import static pl.michal.olszewski.funcional.behavioral.visitor.VisitorLambda.stringVisitor;
 
 import java.math.BigDecimal;
 import java.util.Arrays;
@@ -31,15 +33,33 @@ class VisitorTest {
     }
 
     @Test
+    void fooLambdaTest() {
+      Visitable visitable = new Foo();
+      assertThat(bigDecimalVisitor.apply(visitable)).isEqualTo(TEN);
+    }
+
+    @Test
     void barTest() {
       Visitable visitable = new Bar();
       assertThat(visitable.accept(visitor)).isEqualTo(BigDecimal.ONE);
     }
 
     @Test
+    void barLambdaTest() {
+      Visitable visitable = new Bar();
+      assertThat(bigDecimalVisitor.apply(visitable)).isEqualTo(ONE);
+    }
+
+    @Test
     void bazTest() {
       Visitable visitable = new Baz();
       assertThat(visitable.accept(visitor)).isEqualTo(BigDecimal.ZERO);
+    }
+
+    @Test
+    void bazLambdaTest() {
+      Visitable visitable = new Baz();
+      assertThat(bigDecimalVisitor.apply(visitable)).isEqualTo(ZERO);
     }
 
     @Test
@@ -75,6 +95,25 @@ class VisitorTest {
     void bazTest() {
       Visitable visitable = new Baz();
       assertThat(visitable.accept(visitor)).isEqualTo("BAZ");
+    }
+
+
+    @Test
+    void fooLambdaTest() {
+      Visitable visitable = new Foo();
+      assertThat(stringVisitor.apply(visitable)).isEqualTo("FOO");
+    }
+
+    @Test
+    void barLambdaTest() {
+      Visitable visitable = new Bar();
+      assertThat(stringVisitor.apply(visitable)).isEqualTo("BAR");
+    }
+
+    @Test
+    void bazLambdaTest() {
+      Visitable visitable = new Baz();
+      assertThat(stringVisitor.apply(visitable)).isEqualTo("BAZ");
     }
 
     @Test
