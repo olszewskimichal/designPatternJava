@@ -1,5 +1,7 @@
 package pl.michal.olszewski.standard.behavioral.observer;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import org.junit.jupiter.api.Test;
 
 class ObserverTest {
@@ -16,6 +18,16 @@ class ObserverTest {
 
     System.out.println("Second state change: 127");
     subject.setState(127);
+  }
+
+  @Test
+  void test2() {
+    NewsAgency observable = new NewsAgency();
+    NewsChannel observer = new NewsChannel();
+
+    observable.addObserver(observer);
+    observable.setNews("news");
+    assertEquals(observer.getNews(), "news");
   }
 
 }
